@@ -28,6 +28,8 @@ As a user, I want to have a Co-Driver Display (CDD) and Rear Passenger Display i
 3.1 Display & Zone Mapping:
    class ZoneMapper{}
 
+<img width="1487" height="778" alt="image" src="https://github.com/user-attachments/assets/8080f823-4626-4573-b06c-03561df115cd" />
+
 Component Responsibilities (what each box owns)
 System Layer (you own these as priv-apps/services)
 1. Display Management:
