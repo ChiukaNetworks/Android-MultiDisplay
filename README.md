@@ -11,6 +11,18 @@ As a user, I want to have a Co-Driver Display (CDD) and Rear Passenger Display i
 •App Compatibility: Ensure that both system and user apps are compatible with secondary displays. Design a mechanism to manage app instances across multiple displays, ensuring seamless transiions and interactions.
 •Consider Performance Optimization: Optimize the system to handle multiple displays without compromising performance. Consider resource management strategies to ensure efficient use of system resources.
 
-Assumptions:
+**Assumptions:**
 1. Safety, Navi related apps in Main display only. Media, browsing related in all displays.
 2. To handle synchronization in multiple displays, If an app is opened in one display, make other displays as read-only.
+
+3. **Architecture:**
+4. Android critical componenents used:
+5. DisplayManager, WindowManager, ActivityTaskManager/TaskDisplayAreas.
+•	Occupant Zones (CarOccupantZoneManager) ↔ display mapping.
+•	Car UX Restrictions (speed/gear based).
+•	Multi-user (optional per-seat).
+•	CarAudioManager` audio zones; media routing.
+•	InputManager (per-display focus), Rotary APIs.
+•	SurfaceFlinger/HWC multi-display composition, setFrameRate().
+3.1 Display & Zone Mapping:
+   class ZoneMapper{}
