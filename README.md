@@ -24,5 +24,6 @@ As a user, I want to have a Co-Driver Display (CDD) and Rear Passenger Display i
 •	CarAudioManager` audio zones; media routing.
 •	InputManager (per-display focus), Rotary APIs.
 •	SurfaceFlinger/HWC multi-display composition, setFrameRate().
+
 3.1 Display & Zone Mapping:
    class ZoneMapper{}
